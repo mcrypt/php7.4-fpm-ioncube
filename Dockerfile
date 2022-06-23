@@ -53,8 +53,8 @@ RUN cd /tmp \
     && echo "zend_extension=ioncube_loader_lin_7.4.so" > /usr/local/etc/php/conf.d/docker-php-ext-ioncube_loader.ini \
     && rm -rf /tmp/ioncube*
 
-COPY ./whmcs.ini /usr/local/etc/php/conf.d
-COPY ./xwhmcs.pool.conf /usr/local/etc/php-fpm.d/
+COPY ./billing.ini /usr/local/etc/php/conf.d
+COPY ./billing.pool.conf /usr/local/etc/php-fpm.d/
 
 USER root
 
