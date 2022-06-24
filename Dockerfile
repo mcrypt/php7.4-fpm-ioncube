@@ -21,6 +21,9 @@ RUN set -eux; \
           libc-client-dev \
           libmcrypt-dev; \
   rm -rf /var/lib/apt/lists/*
+  
+RUN apt-get install -y libbz2-dev \
+    && docker-php-ext-install bz2
 
 # Install additional PHP Packages and WHMCS Requirements
 RUN docker-php-ext-install pdo_mysql
