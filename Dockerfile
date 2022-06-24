@@ -16,6 +16,7 @@ RUN set -eux; \
           libjpeg-dev \
           libpng-dev \
           libfreetype6-dev \
+          libgmp-dev \
           libmcrypt-dev; \
   rm -rf /var/lib/apt/lists/*
 
