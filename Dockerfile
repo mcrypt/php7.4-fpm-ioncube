@@ -22,6 +22,15 @@ RUN set -eux; \
 # Install additional PHP Packages and WHMCS Requirements
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install gmp
+RUN docker-php-ext-install imap
+RUN docker-php-ext-install json
+RUN docker-php-ext-install ldap
+RUN docker-php-ext-install libxml
+RUN docker-php-ext-install mailparse
+RUN docker-php-ext-install iconv
+RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install simplexml
 
 RUN docker-php-ext-configure gd \
   --prefix=/usr \
