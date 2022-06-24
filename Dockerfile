@@ -19,7 +19,6 @@ RUN set -eux; \
           libgmp-dev \
           libkrb5-dev \
           libc-client-dev \
-          libbz2-dev \
           libmcrypt-dev; \
   rm -rf /var/lib/apt/lists/*
 
@@ -27,9 +26,7 @@ RUN set -eux; \
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install gmp
-RUN docker-php-ext-install bz2
 RUN docker-php-ext-install json
-RUN docker-php-ext-install libxml
 RUN docker-php-ext-install mailparse
 RUN docker-php-ext-install iconv
 RUN docker-php-ext-install mbstring
