@@ -17,6 +17,7 @@ RUN set -eux; \
           libpng-dev \
           libfreetype6-dev \
           libgmp-dev \
+          libkrb5-dev \
           libc-client-dev \
           libmcrypt-dev; \
   rm -rf /var/lib/apt/lists/*
